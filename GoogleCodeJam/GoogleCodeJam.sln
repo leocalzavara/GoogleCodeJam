@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Africa2010", "Africa2010", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Africa2010.QualificationRound.C", "Africa2010.QualificationRound.C\Africa2010.QualificationRound.C.csproj", "{0DC0A3CB-E027-4182-93C6-66944B1C4920}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeJam2009", "CodeJam2009", "{9A851A06-6B8F-4799-A157-1D684D9618BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeJam2009.Qualification.A", "CodeJam2009.Qualification.A\CodeJam2009.Qualification.A.csproj", "{0EA75590-B440-44EB-ACF5-92958F676333}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -49,6 +53,16 @@ Global
 		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Release|Win32.ActiveCfg = Release|x86
 		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Release|x86.ActiveCfg = Release|x86
 		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Release|x86.Build.0 = Release|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Debug|Win32.ActiveCfg = Debug|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Debug|x86.ActiveCfg = Debug|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Debug|x86.Build.0 = Debug|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Release|Mixed Platforms.Build.0 = Release|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Release|Win32.ActiveCfg = Release|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Release|x86.ActiveCfg = Release|x86
+		{0EA75590-B440-44EB-ACF5-92958F676333}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +71,6 @@ Global
 		{C3D96A4D-E0AE-4119-910F-E853EA7A069C} = {2AC2AEF9-4891-4B01-8C0A-3D25A02C7FFB}
 		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723} = {2AC2AEF9-4891-4B01-8C0A-3D25A02C7FFB}
 		{0DC0A3CB-E027-4182-93C6-66944B1C4920} = {2AC2AEF9-4891-4B01-8C0A-3D25A02C7FFB}
+		{0EA75590-B440-44EB-ACF5-92958F676333} = {9A851A06-6B8F-4799-A157-1D684D9618BC}
 	EndGlobalSection
 EndGlobal
