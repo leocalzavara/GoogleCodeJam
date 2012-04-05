@@ -11,20 +11,42 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Africa2010.QualificationRou
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
 		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Debug|Win32.ActiveCfg = Debug|x86
 		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Debug|x86.ActiveCfg = Debug|x86
 		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Debug|x86.Build.0 = Debug|x86
+		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Release|Win32.ActiveCfg = Release|x86
 		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Release|x86.ActiveCfg = Release|x86
 		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723}.Release|x86.Build.0 = Release|x86
+		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Debug|Win32.ActiveCfg = Debug|x86
 		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Debug|x86.ActiveCfg = Debug|x86
 		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Debug|x86.Build.0 = Debug|x86
+		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Release|Win32.ActiveCfg = Release|x86
 		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Release|x86.ActiveCfg = Release|x86
 		{C3D96A4D-E0AE-4119-910F-E853EA7A069C}.Release|x86.Build.0 = Release|x86
+		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Debug|Win32.ActiveCfg = Debug|x86
 		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Debug|x86.ActiveCfg = Debug|x86
 		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Debug|x86.Build.0 = Debug|x86
+		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Release|Mixed Platforms.Build.0 = Release|x86
+		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Release|Win32.ActiveCfg = Release|x86
 		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Release|x86.ActiveCfg = Release|x86
 		{0DC0A3CB-E027-4182-93C6-66944B1C4920}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
@@ -32,8 +54,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723} = {2AC2AEF9-4891-4B01-8C0A-3D25A02C7FFB}
 		{C3D96A4D-E0AE-4119-910F-E853EA7A069C} = {2AC2AEF9-4891-4B01-8C0A-3D25A02C7FFB}
+		{E1122CDD-69BD-4BB7-BCEE-1C12C046F723} = {2AC2AEF9-4891-4B01-8C0A-3D25A02C7FFB}
 		{0DC0A3CB-E027-4182-93C6-66944B1C4920} = {2AC2AEF9-4891-4B01-8C0A-3D25A02C7FFB}
 	EndGlobalSection
 EndGlobal
