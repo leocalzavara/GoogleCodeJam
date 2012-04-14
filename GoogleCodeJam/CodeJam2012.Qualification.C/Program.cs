@@ -12,7 +12,7 @@ namespace CodeJam2012.Qualification.C
 
         static void Main(string[] args)
         {
-            var inputFile = new StreamReader("SampleInput.txt");
+            var inputFile = new StreamReader("C-large.in");
             var outputFile = new StreamWriter("Output.txt");
 
             int numberOfCases = Int32.Parse(inputFile.ReadLine());
@@ -47,7 +47,7 @@ namespace CodeJam2012.Qualification.C
                         {
                             recycledPairs.Add(recycledPair);
                             //numberOfValidRecycledPairs++;
-                            outputFile.WriteLine(recycledPair[0] + ", " + recycledPair[1]);
+                            //outputFile.WriteLine(recycledPair[0] + ", " + recycledPair[1]);
                         }
                     }
 
