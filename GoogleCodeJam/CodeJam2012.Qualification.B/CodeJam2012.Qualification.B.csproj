@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{677225D7-6508-44F2-A2D2-9E6613307B76}</ProjectGuid>
+    <ProjectGuid>{B7DC0F70-7466-4A78-AFA0-A8000A914BE0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CodeJam2012.Qualification.A</RootNamespace>
-    <AssemblyName>CodeJam2012.Qualification.A</AssemblyName>
+    <RootNamespace>CodeJam2012.Qualification.B</RootNamespace>
+    <AssemblyName>CodeJam2012.Qualification.B</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -47,13 +47,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Problem.txt" />
     <Content Include="SampleInput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="A-small-attempt0.in">
+    <None Include="B-large.in">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="B-small-attempt0.in">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
