@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeJam2012.Qualification.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeJam2012.Qualification.B", "CodeJam2012.Qualification.B\CodeJam2012.Qualification.B.csproj", "{B7DC0F70-7466-4A78-AFA0-A8000A914BE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeJam2012.Qualification.C", "CodeJam2012.Qualification.C\CodeJam2012.Qualification.C.csproj", "{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +135,18 @@ Global
 		{B7DC0F70-7466-4A78-AFA0-A8000A914BE0}.Release|Win32.ActiveCfg = Release|x86
 		{B7DC0F70-7466-4A78-AFA0-A8000A914BE0}.Release|x86.ActiveCfg = Release|x86
 		{B7DC0F70-7466-4A78-AFA0-A8000A914BE0}.Release|x86.Build.0 = Release|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Debug|Win32.ActiveCfg = Debug|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Debug|x86.ActiveCfg = Debug|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Debug|x86.Build.0 = Debug|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Release|Any CPU.ActiveCfg = Release|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Release|Mixed Platforms.Build.0 = Release|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Release|Win32.ActiveCfg = Release|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Release|x86.ActiveCfg = Release|x86
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -145,5 +159,6 @@ Global
 		{EF7B29B7-6CD7-4C58-A0CA-D846FAA91344} = {4AA7E6FD-7952-4D69-81A6-81433E7267F3}
 		{677225D7-6508-44F2-A2D2-9E6613307B76} = {690ED59A-103E-4566-9FFA-D34D63DF526C}
 		{B7DC0F70-7466-4A78-AFA0-A8000A914BE0} = {690ED59A-103E-4566-9FFA-D34D63DF526C}
+		{C405CEEF-0E77-4FCF-B6FC-8E60C5022122} = {690ED59A-103E-4566-9FFA-D34D63DF526C}
 	EndGlobalSection
 EndGlobal
