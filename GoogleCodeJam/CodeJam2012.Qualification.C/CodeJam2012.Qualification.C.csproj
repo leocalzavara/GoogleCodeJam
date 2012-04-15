@@ -52,6 +52,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="C-large-practice.in">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="C-large.in">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
