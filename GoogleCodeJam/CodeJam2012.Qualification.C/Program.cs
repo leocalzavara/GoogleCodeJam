@@ -12,7 +12,9 @@ namespace CodeJam2012.Qualification.C
 
         static void Main(string[] args)
         {
-            var inputFile = new StreamReader("C-large-practice.in");
+            var initialTime = DateTime.Now;
+
+            var inputFile = new StreamReader("C-small-practice.in");
             var outputFile = new StreamWriter("Output.txt");
 
             int numberOfCases = Int32.Parse(inputFile.ReadLine());
@@ -29,21 +31,23 @@ namespace CodeJam2012.Qualification.C
 
                 int numberOfValidRecycledPairs = 0;
 
-                for (int j = lowerLimit; j <= higherLimit; j++)
+                for (int n = lowerLimit; n <= higherLimit; n++)
                 {
-                    string currentNumber = j.ToString();
-                    //Console.Write(currentNumber + " -> ");
+                    //Console.Write(n + " -> ");
 
-                    for (int k = currentNumber.Length - 1; k > 0; k--)
+                    int numberOfDigits = n.ToString().Length;
+                    int m = n;
+
+                    for (int j = 0; j < numberOfDigits - 1; j++)
                     {
-                        int n = j; // j is the currentNumber...
-                        int m = Int32.Parse(currentNumber.Substring(k) + currentNumber.Substring(0, k));
-                        //Console.Write(number + " ");
+                        // shift
+                        m = (int)((m / 10) + ((m % 10) * Math.Pow(10, numberOfDigits - 1)));
+
+                        //Console.Write(m + " ");
 
                         if (IsRecycledPair(n, m))
                         {
                             numberOfValidRecycledPairs++;
-                            //outputFile.WriteLine(n + ", " + m);
                         }
                     }
 
@@ -57,6 +61,8 @@ namespace CodeJam2012.Qualification.C
 
             inputFile.Dispose();
             outputFile.Dispose();
+
+            Console.WriteLine("Execution time: {0}", (DateTime.Now - initialTime));
         }
 
         static bool IsRecycledPair(int n, int m)
