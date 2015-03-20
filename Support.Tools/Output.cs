@@ -41,6 +41,14 @@ namespace Support.Tools
             this._outputFile.Write(value);
         }
 
+        public void WriteLine(string format, params object[] args)
+        {
+            if (_debug)
+                Console.WriteLine(format, args);
+
+            this._outputFile.WriteLine(format, args);
+        }
+
         public void Flush()
         {
             this._outputFile.Flush();
