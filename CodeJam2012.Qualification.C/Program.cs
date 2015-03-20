@@ -14,16 +14,13 @@ namespace CodeJam2012.Qualification.C
         {
             var initialTime = DateTime.Now;
 
-            var inputFile = new StreamReader("C-small-practice.in");
+            var inputFile = new StreamReader("C-large-practice.in");
             var outputFile = new StreamWriter("Output.txt");
 
             int numberOfCases = Int32.Parse(inputFile.ReadLine());
 
             for (int i = 0; i < numberOfCases; i++)
             {
-                Console.Write("Case #{0}: ", i + 1);
-                outputFile.Write("Case #{0}: ", i + 1);
-
                 string[] inputLine = inputFile.ReadLine().Split(' ');
 
                 lowerLimit = Int32.Parse(inputLine[0]);
@@ -33,8 +30,6 @@ namespace CodeJam2012.Qualification.C
 
                 for (int n = lowerLimit; n <= higherLimit; n++)
                 {
-                    //Console.Write(n + " -> ");
-
                     int numberOfDigits = n.ToString().Length;
                     int m = n;
 
@@ -43,19 +38,18 @@ namespace CodeJam2012.Qualification.C
                         // shift
                         m = (int)((m / 10) + ((m % 10) * Math.Pow(10, numberOfDigits - 1)));
 
-                        //Console.Write(m + " ");
+                        // Info: https://code.google.com/codejam/contest/1460488/dashboard#s=a&a=2
+                        if (m == n) break;
 
-                        if (IsRecycledPair(n, m))
+                        if (n < m && m <= higherLimit)
                         {
                             numberOfValidRecycledPairs++;
                         }
                     }
-
-                    //Console.Write(Environment.NewLine);
                 }
 
-                Console.Write(numberOfValidRecycledPairs + Environment.NewLine);
-                outputFile.Write(numberOfValidRecycledPairs + Environment.NewLine);
+                Console.WriteLine("Case #{0}: {1}", i + 1, numberOfValidRecycledPairs);
+                outputFile.WriteLine("Case #{0}: {1}", i + 1, numberOfValidRecycledPairs);
                 outputFile.Flush();
             }
 
@@ -63,16 +57,6 @@ namespace CodeJam2012.Qualification.C
             outputFile.Dispose();
 
             Console.WriteLine("Execution time: {0}", (DateTime.Now - initialTime));
-        }
-
-        static bool IsRecycledPair(int n, int m)
-        {
-            if (lowerLimit <= n && n < m && m <= higherLimit)
-            {
-                return true;
-            }
-
-            return false;
         }
     }
 }
