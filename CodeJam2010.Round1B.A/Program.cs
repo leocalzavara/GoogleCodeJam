@@ -28,28 +28,9 @@ namespace CodeJam2010.Round1B.A
                 for (int i = 0; i < numberOfExistingFolders; ++i)
                 {
                     var currentNode = rootFolder;
-                    var pathParts = inputFile.ReadLine().Split('/');
+                    var path = inputFile.ReadLine();
 
-                    var treeDepth = 0;
-
-                    for (var j = 0; j < pathParts.Length; ++j)
-                    {
-                        if (treeDepth == j)
-                        {
-                            continue;
-                        }
-
-                        var node = currentNode.Children.SingleOrDefault(n => n.Value == pathParts[j]);
-
-                        if (node == null)
-                        {
-                            node = new TreeNode(pathParts[j]);
-                            currentNode.Children.Add(node);
-                        }
-
-                        currentNode = node;
-                        treeDepth++;
-                    }
+                    mkdir(currentNode, path);
                 }
 
                 long numberOfFoldersCreated = 0;
@@ -57,29 +38,9 @@ namespace CodeJam2010.Round1B.A
                 for (int i = 0; i < numberOfDesiredFolders; ++i)
                 {
                     var currentNode = rootFolder;
-                    var pathParts = inputFile.ReadLine().Split('/');
+                    var path = inputFile.ReadLine();
 
-                    var treeDepth = 0;
-
-                    for (var j = 0; j < pathParts.Length; ++j)
-                    {
-                        if (treeDepth == j)
-                        {
-                            continue;
-                        }
-
-                        var node = currentNode.Children.SingleOrDefault(n => n.Value == pathParts[j]);
-
-                        if (node == null)
-                        {
-                            node = new TreeNode(pathParts[j]);
-                            currentNode.Children.Add(node);
-                            numberOfFoldersCreated++;
-                        }
-
-                        currentNode = node;
-                        treeDepth++;
-                    }
+                    numberOfFoldersCreated += mkdir(currentNode, path);
                 }
 
                 output.WriteLine("Case #{0}: {1}", caseNumber, numberOfFoldersCreated);
@@ -88,17 +49,56 @@ namespace CodeJam2010.Round1B.A
 
             output.Dispose();
         }
+
+        static int mkdir(TreeNode currentNode, string path)
+        {
+            var treeDepth = 0;
+            int numberOfFoldersCreated = 0;
+
+            var pathParts = path.Split('/');
+
+            for (var j = 0; j < pathParts.Length; ++j)
+            {
+                if (treeDepth == j) continue;
+
+                var node = currentNode.FindChild(pathParts[j]);
+
+                if (node == null)
+                {
+                    node = currentNode.AddChild(pathParts[j]);
+                    numberOfFoldersCreated++;
+                }
+
+                currentNode = node;
+                treeDepth++;
+            }
+
+            return numberOfFoldersCreated;
+        }
     }
 
     class TreeNode
     {
         public String Value;
-        public List<TreeNode> Children;
+        private List<TreeNode> Children;
 
         public TreeNode(string value)
         {
             this.Value = value;
             this.Children = new List<TreeNode>();
+        }
+
+        public TreeNode FindChild(string value)
+        {
+            return this.Children.Find(node => node.Value == value);
+        }
+
+        public TreeNode AddChild(string value)
+        {
+            var childNode = new TreeNode(value);
+            this.Children.Add(childNode);
+
+            return childNode;
         }
     }
 }
