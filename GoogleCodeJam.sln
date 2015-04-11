@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeJam2015", "CodeJam2015"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeJam2015.Qualification.A", "CodeJam2015.Qualification.A\CodeJam2015.Qualification.A.csproj", "{79DC8EB7-BF66-410A-AC71-CC1D3549AC63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeJam2015.Qualification.B", "CodeJam2015.Qualification.B\CodeJam2015.Qualification.B.csproj", "{1E63B4B6-6A65-4D53-8619-2417B43E29A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,6 +211,18 @@ Global
 		{79DC8EB7-BF66-410A-AC71-CC1D3549AC63}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{79DC8EB7-BF66-410A-AC71-CC1D3549AC63}.Release|Win32.ActiveCfg = Release|Any CPU
 		{79DC8EB7-BF66-410A-AC71-CC1D3549AC63}.Release|x86.ActiveCfg = Release|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Release|Win32.ActiveCfg = Release|Any CPU
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -226,5 +240,6 @@ Global
 		{BC3C24B0-2CEF-4864-B2AF-605ECCC50FA2} = {18568FF0-35D6-4019-935B-7D4D9A447A72}
 		{A7E559B9-AF89-4187-A6DA-060A7E4BC268} = {18568FF0-35D6-4019-935B-7D4D9A447A72}
 		{79DC8EB7-BF66-410A-AC71-CC1D3549AC63} = {54720B50-30E8-4AFC-A10C-EB4D47DA9D95}
+		{1E63B4B6-6A65-4D53-8619-2417B43E29A0} = {54720B50-30E8-4AFC-A10C-EB4D47DA9D95}
 	EndGlobalSection
 EndGlobal
